@@ -5,3 +5,14 @@
 .card p {
   line-height: 1.8rem;
 }
+
+.card {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 968px) {
+  .card {
+    display: block;
+  }
+}
