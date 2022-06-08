@@ -5,11 +5,19 @@
   grid-gap: 8px;
 }
 
+.card img {
+    width: 50vw;
+  }
+
+.description {
+  margin-right: 56px;
+}
+
 #img-small {
   display: none;
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 1024px) {
   /* For mobile phones: */
   .grid {
     grid-template-columns: 1fr;
@@ -29,5 +37,10 @@
 
   #img-small {
     display: block;
+  }
+
+  .description {
+    margin-right: 0px;
+    width: 100%;
   }
 }
