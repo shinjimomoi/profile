@@ -14,5 +14,7 @@
 @media only screen and (max-width: 968px) {
   .card {
     display: block;
+    margin: 12vh 0 8vh 0;
   }
+
 }
