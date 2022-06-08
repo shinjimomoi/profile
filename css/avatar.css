@@ -1,0 +1,14 @@
+.avatar {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+@media only screen and (max-width: 1024px) {
+  .avatar {
+    margin-top: 56px;
+    width: 100vw;
+    height: 80vw;
+  }
+}
