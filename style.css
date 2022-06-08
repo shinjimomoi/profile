@@ -16,18 +16,21 @@ h2 {
 a.btn-red {
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: rgb(33, 33, 33);
   display: inline-block;
-  background-color: #EF5B5B;
-  padding: 15px 50px;
-  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  border: 3px solid rgb(33, 33, 33);
+  padding: 10px 40px;
+  box-shadow: 10px 10px #EF5B5B;
   border-radius: 7px;
   margin: 20px;
+
+  transition: .2s ease-in-out;
 }
 
-.hover-link:hover {
+a.hover-link:hover {
   background-color: #ff4646;
-  transition: .5s;
+  box-shadow: 3px 3px #EF5B5B;
+  color: #fff;
 }
 
 .img-circle {
@@ -58,14 +61,13 @@ ul {
 /* Icons */
 
 li a {
-  font-size: 40px;
+
   color: #EF5B5B;
+  transition: ease-in-out .3s;
 }
 
 li a, li i:hover {
-  font-size: 40px;
   color: #ff4646;
-  transition: .5s;
 }
 
 i {
