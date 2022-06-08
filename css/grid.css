@@ -13,6 +13,11 @@
   margin-right: 56px;
 }
 
+.description-right {
+  margin-left: 56px;
+  text-align: right;
+}
+
 #img-small {
   display: none;
 }
@@ -22,6 +27,11 @@
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .description-right {
+  margin-left: 0;
+  text-align: left;
+}
 
   .container {
     margin: 0 10vw 0 10vw;

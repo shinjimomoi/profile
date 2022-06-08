@@ -4,8 +4,8 @@ a {
 }
 
 nav a:hover {
-  color: #77e6ff;
-  transform: translate(-16px, 0);
+  color: #ff5384;
+  transform: translate(-4px, 0);
 }
 
 a img:hover {
