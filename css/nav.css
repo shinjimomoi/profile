@@ -1,0 +1,9 @@
+nav {
+  margin: 0 5vw 0 5vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-container {
+    margin: 0 10vw 0 10vw;
+  }
+}
