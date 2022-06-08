@@ -1,3 +1,23 @@
-a:hover {
+a {
+  transition: transform .3s ease-out;
+  display: inline-block;
+}
+
+nav a:hover {
   color: #77e6ff;
+  transform: translate(-16px, 0);
+}
+
+.grid a:hover {
+  transform: scale(110%);
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+img:hover {
+  filter: hue-rotate();
 }
