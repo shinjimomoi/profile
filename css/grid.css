@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: 0;
+  }
+}
