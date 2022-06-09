@@ -17,3 +17,11 @@ img {
   width: 100%;
   transition: all 0.5s;
 }
+
+i {
+  transition: all 0.3s;
+}
+
+i:hover {
+  transform: scale(105%);
+}

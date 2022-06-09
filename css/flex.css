@@ -13,3 +13,14 @@
 .align-center {
   align-items: center;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed {
+  position: fixed;
+  right: 40px;
+  bottom: 0;
+}
