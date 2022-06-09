@@ -37,4 +37,11 @@
   .icons {
     display: block;
   }
+
+  .flex-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 }
