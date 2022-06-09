@@ -14,13 +14,27 @@
   align-items: center;
 }
 
-.flex-column {
+.flex-icons {
   display: flex;
   flex-direction: column;
 }
 
 .fixed {
   position: fixed;
-  right: 40px;
+  right: 0;
   bottom: 0;
+}
+
+.icons {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .flex-icons {
+    display: none;
+  }
+
+  .icons {
+    display: block;
+  }
 }
