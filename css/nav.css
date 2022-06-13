@@ -21,23 +21,15 @@ nav h3 {
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  top: -4vh;
-  right: -10vw;
+  position: fixed;
+  top: -2vh;
+  right: 0vw;
   transition: all 0.4s;
   background-color: rgba(3.9, 10.2, 18, 0.85);
   width: 100vw;
   height: 100vh;
   z-index: 1;
   text-align: center;
-}
-
-.close {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .dropdown-content li a{
@@ -60,6 +52,9 @@ nav h3 {
     display: none;
     background: transparent;
     z-index: 2;
+    position: fixed;
+    right: 45px;
+    opacity: 0.5;
 }
 
 
