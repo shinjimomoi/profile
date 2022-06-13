@@ -24,9 +24,8 @@ nav h3 {
   position: absolute;
   top: -4vh;
   right: -10vw;
-  opacity: 0.8;
   transition: all 0.4s;
-  background-color: #0A1A2E;
+  background-color: rgba(3.9, 10.2, 18, 0.85);
   width: 100vw;
   height: 100vh;
   z-index: 1;
