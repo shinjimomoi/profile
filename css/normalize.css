@@ -1,11 +1,10 @@
 body {
-  background-color: rgb(30, 30, 30);
   padding-bottom: 120px;
 }
 
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
 html, body {

@@ -16,9 +16,15 @@
 
 <body class="dark-bg">
   <nav class="mobile-container">
-    <div class="flex flex-between align-center">
+    <div class="flex flex-between align-center relative">
       <h3 class="primary pt-3 mt-5">SM</h3>
-      <ul class="flex flex-end mt-5">
+      <button onclick="dropdown()" class="navbar-toggler"><i class="fas fa-bars light-gray mt-5"></i></button>
+      <ul id="navbar-desktop" class="mt-5 flex flex-end">
+        <li class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
+        <li class=""><a href="#projects" class="light-gray"><span class="primary font-light">02 </span> Projects</a></li>
+        <li class=""><a href="#connect" class="light-gray"><span class="primary font-light">03 </span> Connect</a></li>
+      </ul>
+      <ul id="navbar" class="mt-5 dropdown-content">
         <li class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
         <li class=""><a href="#projects" class="light-gray"><span class="primary font-light">02 </span> Projects</a></li>
         <li class=""><a href="#connect" class="light-gray"><span class="primary font-light">03 </span> Connect</a></li>
@@ -107,5 +113,19 @@
       <div class="vl"></div>
     </div>
   </div>
+
+
+  <script>
+  //   document.addEventListener("click", (event) => {
+  //   const navbar = document.querySelector(".navbar-toggler");
+  //   console.log(event);
+  //   navbar.classList.toggle("enabled", "disabled");
+  // })
+
+  function dropdown() {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("enabled");
+}
+  </script>
 </body>
 </html>
