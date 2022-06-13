@@ -1,4 +1,13 @@
 .banner {
-  margin-top: 20vh;
-  height: 72vh;
+  margin-top: 24vh;
+  height: 60vh;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    margin-top: 20vh;
+    height: 64vh;
+  }
 }
