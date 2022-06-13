@@ -22,7 +22,7 @@ nav h3 {
 .dropdown-content {
   display: none;
   position: fixed;
-  top: -2vh;
+  top: -4vh;
   right: 0vw;
   transition: all 0.4s;
   background-color: rgba(3.9, 10.2, 18, 0.85);
@@ -38,7 +38,7 @@ nav h3 {
 }
 
 .dropdown-content li:last-child{
-  margin-bottom: 40vh;
+  margin-bottom: 36vh;
 }
 
 .enabled {
