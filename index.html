@@ -18,7 +18,7 @@
   <nav class="mobile-container">
     <div class="flex flex-between align-center relative">
       <h3 class="primary pt-3 mt-5">SM</h3>
-      <button onclick="dropdown()" class="navbar-toggler"><i class="fas fa-bars light-gray mt-5"></i></button>
+      <button onclick="dropdown()" id="toggler" class="navbar-toggler"><i class="fas fa-bars light-gray mt-5"></i></button>
       <ul id="navbar-desktop" class="mt-5 flex flex-end">
         <li class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
         <li class=""><a href="#projects" class="light-gray"><span class="primary font-light">02 </span> Projects</a></li>
@@ -125,6 +125,9 @@
   function dropdown() {
   const navbar = document.getElementById("navbar");
   navbar.classList.toggle("enabled");
+  const toggler = document.getElementById("toggler");
+  toggler.classList.toggle("fa fa-bars");
+  toggler.classList.add("fa-times")
 }
   </script>
 </body>

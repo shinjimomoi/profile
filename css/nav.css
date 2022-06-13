@@ -33,6 +33,14 @@ nav h3 {
   text-align: center;
 }
 
+.close {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .dropdown-content li a{
   margin-bottom: 40px;
   font-size: 3rem;
@@ -52,6 +60,7 @@ nav h3 {
     cursor: pointer;
     display: none;
     background: transparent;
+    z-index: 2;
 }
 
 
