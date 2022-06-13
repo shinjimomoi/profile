@@ -27,7 +27,7 @@ nav h3 {
   transition: all 0.4s;
   background-color: rgba(3.9, 10.2, 18, 0.85);
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   z-index: 1;
   text-align: center;
 }
@@ -38,7 +38,7 @@ nav h3 {
 }
 
 .dropdown-content li:last-child{
-  margin-bottom: 28vh;
+  margin-bottom: 40vh;
 }
 
 .enabled {
