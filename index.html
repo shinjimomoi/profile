@@ -6,34 +6,129 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/efefa1abbc.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="style.css">
-  <title>My profile</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Shinji Momoi - Front-end Developer</title>
 </head>
 
-<body>
-  <div class="container text-center">
-    <div class="card card-white" id="card-main">
-      <h1>Hello, I'm Shinji</h1>
-      <img class="avatar img-circle" src="images/profile_pic.jpeg" alt="Shinji's profile_pic">
-      <p>I love photography, design and big cities. Currently working hard to become a web developer.</p>
-      <a class="btn-red hover-link" href="www.lewagon.com">Discover Le Wagon</a>
-    </div>
-    <div class="card card-white">
-      <h2>Follow me</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="https://github.com/shinjimomoi" target="_blank"><i class="fab fa-github-alt"></i></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/shinji.momoi" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/paintitblack8/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </li>
+<body class="dark-bg">
+  <nav class="mobile-container">
+    <div class="flex flex-between align-center relative">
+      <h3 class="primary pt-3 mt-5">SM</h3>
+      <button onclick="dropdown()" id="toggler" class="navbar-toggler"><i class="fas fa-bars light-gray mt-5"></i></button>
+      <ul id="navbar-desktop" class="mt-5 flex flex-end">
+        <li class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
+        <li class=""><a href="#projects" class="light-gray"><span class="primary font-light">02 </span> Projects</a></li>
+        <li class=""><a href="#connect" class="light-gray"><span class="primary font-light">03 </span> Connect</a></li>
+      </ul>
+      <ul id="navbar" class="mt-5 dropdown-content">
+        <li class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
+        <li class=""><a href="#projects" class="light-gray"><span class="primary font-light">02 </span> Projects</a></li>
+        <li class=""><a href="#connect" class="light-gray"><span class="primary font-light">03 </span> Connect</a></li>
       </ul>
     </div>
-  </div>
-</body>
+  </nav>
 
+  <div class="container">
+    <div class="banner">
+      <div class="background-img vertical-center">
+        <h3 class="primary mb-3">Hi, my name is</h3>
+        <h1 class="light-gray">Shinji Momoi. <br> <span class="gray">I build things for web.</span></h1>
+        <h3 class="gray font-light mt-5">Front-end developer in Tokyo.</h3>
+      </div>
+    </div>
+
+
+    <h2 id="about" class="light-gray"><span class="primary font-light">01</span> About me</h2>
+
+    <div class="card align-center">
+      <div class="description">
+        <p class="gray">Hello! My name is Shinji and I enjoy designing things that live on the internet. As a designer since 2012, I have worked as Art director for an advertising company in Brazil. Since then, I started to become more and more interested in web development, but it was not until recently that I decided to learn it.</p>
+          <p class="gray mt-5">I enjoy walking around and take photos on my free time, which you can check on my <a href="https://instagram.com/paintitblack8" class="primary">instagram</a>. </p>
+        <p class="gray mt-5">What I know: <span class="primary font-bold">Ruby on Rails / JavaScript / Html / Css / Photoshop / Illustrator</span> </p>
+      </div>
+      <img class="avatar" src="images/profile_pic.jpeg" alt="photo ronin">
+    </div>
+
+
+    <h2 id="projects" class="light-gray"><span class="primary font-light">02</span> Projects</h2>
+
+    <div class="mt-5 ">
+      <div class="card align-center">
+        <div class="description">
+          <h3 class="light-gray mb-5"><span class="primary font-light">01 </span> Photo Ronin</h3>
+          <a id="img-small" href="http://www.photo-ronin.xyz/"><img class="" src="images/Photo-ronin-mockup.png" alt="photo ronin"></a>
+          <p class="gray">This app is for photographers looking for new places and angles to shoot. We used tags and geolocation to filter places. Our team had 2 weeks to work on it and my main role was front-end. This was the final project of the Le Wagon bootcamp.</p>
+          <p class="gray mt-3">Role: <span class="primary font-bold">Front-end</span> </p>
+          <p class="gray mt-3">Tech stack: <span class="primary font-bold">Rails / JavaScript / Stimulus / Postgresql / Html / Css</span> </p>
+          <a href="http://www.photo-ronin.xyz/" class="btn btn-ghost mt-5">Check it out</a>
+        </div>
+        <a id="img-big" href="http://www.photo-ronin.xyz/"><img class="" src="images/Photo-ronin-mockup.png" alt="photo ronin"></a>
+      </div>
+
+      <div class="card align-center">
+        <a id="img-big" href="https://no-camp-no-life.herokuapp.com/"><img class="" src="images/No-camp-no-life-horizontal.png" alt="No camp, no life"></a>
+        <div class="description-right">
+          <h3 class="light-gray mb-5"><span class="primary font-light">02 </span> No camp, No life</h3>
+          <a id="img-small" href="https://no-camp-no-life.herokuapp.com/"><img class="" src="images/No-camp-no-life.png" alt="No camp, no life"></a>
+          <p class="gray">This is a marketplace like website. The idea is to have an user renting camping cars from the owner. Mapbox and PG search were used in this project. It was the first time working as a team and a good practice using github. </p>
+          <p class="gray mt-3">Role: <span class="primary font-bold">Front-end</span> </p>
+          <p class="gray mt-3">Tech stack: <span class="primary font-bold">Rails / JavaScript / Stimulus / Postgresql / Html / Css</span> </p>
+          <a href="https://no-camp-no-life.herokuapp.com/" class="btn btn-ghost mt-5">Check it out</a>
+        </div>
+      </div>
+
+      <div class="card align-center">
+        <div class="description">
+          <h3 class="light-gray mb-5"><span class="primary font-light">03 </span> Movie watchlist</h3>
+          <a id="img-small" href="https://watch-list-shinji.herokuapp.com/"><img class="" src="images/watchlist.png" alt="Watchlist"></a>
+          <p class="gray">This is my first Rails project. The idea is to create lists and bookmark movies. It was a good practice for Rails and front-end.</p>
+          <p class="gray mt-3">Role: <span class="primary font-bold">Sole developer</span> </p>
+          <p class="gray mt-3">Tech stack: <span class="primary font-bold">Rails / Sqlite / Html / Css</span> </p>
+          <a href="https://no-camp-no-life.herokuapp.com/" class="btn btn-ghost mt-5">Check it out</a>
+        </div>
+        <a id="img-big" href="https://watch-list-shinji.herokuapp.com/"><img class="" src="images/watchlist.png" alt="Watchlist"></a>
+      </div>
+
+      <div id="connect" class="text-center">
+        <h2 class="light-gray"><span class="primary font-light">03</span> Connect with me</h2>
+        <p class="gray mt-5">Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        <div class="text-center flex-btn">
+          <a class="email-link btn btn-ghost mt-5 me-5" href="mailto:shinjimomoi@gmail.com" rel="noopener noreferrer" target="_blank">Say Hello</a>
+          <div class="flex icons mt-3">
+            <a href="https://www.linkedin.com/in/shinjimomoi/"><i class="fab fa-linkedin gray m-3"></i></a>
+            <a href="https://github.com/shinjimomoi"><i class="fab fa-github gray m-3"></i></a>
+            <a href="https://instagram.com/paintitblack8"><i class="fab fa-instagram gray m-3"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-icons fixed mobile-container">
+      <a href="https://www.linkedin.com/in/shinjimomoi/"><i class="fab fa-linkedin gray m-3"></i></a>
+      <a href="https://github.com/shinjimomoi"><i class="fab fa-github gray m-3"></i></a>
+      <a href="https://instagram.com/paintitblack8"><i class="fab fa-instagram gray m-3"></i></a>
+      <div class="vl"></div>
+    </div>
+  </div>
+
+
+  <script>
+  //   document.addEventListener("click", (event) => {
+  //   const navbar = document.querySelector(".navbar-toggler");
+  //   console.log(event);
+  //   navbar.classList.toggle("enabled", "disabled");
+  // })
+
+  function dropdown() {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("enabled");
+  const toggler = document.getElementById("toggler");
+  toggler.classList.toggle("fa fa-bars");
+  toggler.classList.add("fa-times")
+}
+  </script>
+</body>
 </html>
