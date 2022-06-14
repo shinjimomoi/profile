@@ -25,7 +25,7 @@
         <li class=""><a href="#connect" class="light-gray"><span class="primary font-light">03 </span> Connect</a></li>
       </ul>
       <ul id="navbar" class="mt-5 dropdown-content">
-        <li class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
+        <li onclick="close()" class=""><a href="#about" class="light-gray"><span class="primary font-light">01 </span> About me</a></li>
         <li class=""><a href="#projects" class="light-gray"><span class="primary font-light">02 </span> Projects</a></li>
         <li class=""><a href="#connect" class="light-gray"><span class="primary font-light">03 </span> Connect</a></li>
       </ul>
@@ -50,23 +50,23 @@
           <p class="gray mt-5">I enjoy walking around and take photos on my free time, which you can check on my <a href="https://instagram.com/paintitblack8" class="primary">instagram</a>. </p>
         <p class="gray mt-5">What I know: <span class="primary font-bold">Ruby on Rails / JavaScript / Html / Css / Photoshop / Illustrator</span> </p>
       </div>
-      <img class="avatar" src="images/profile_pic.jpeg" alt="photo ronin">
+      <img class="avatar" src="images/prof_pic.jpg" alt="photo ronin">
     </div>
 
 
-    <h2 class="light-gray section"><span class="section primary font-light">02</span> Projects</h2>
+    <h2 id="projects" class="light-gray section"><span class="section primary font-light">02</span> Projects</h2>
 
     <div class="mt-5 ">
       <div class="card align-center">
         <div class="description">
           <h3 class="light-gray mb-5"><span class="primary font-light">01 </span> Photo Ronin</h3>
-          <a id="img-small" href="http://www.photo-ronin.xyz/"><img class="" src="images/Photo-ronin-mockup.png" alt="photo ronin"></a>
+          <a id="img-small" href="https://photo-ronin.herokuapp.com/"><img class="" src="images/Photo-ronin-mockup.png" alt="photo ronin"></a>
           <p class="gray">This app is for photographers looking for new places and angles to shoot. We used tags and geolocation to filter places. Our team had 2 weeks to work on it and my main role was front-end. This was the final project of the Le Wagon bootcamp.</p>
           <p class="gray mt-3">Role: <span class="primary font-bold">Front-end</span> </p>
           <p class="gray mt-3">Tech stack: <span class="primary font-bold">Rails / JavaScript / Stimulus / Postgresql / Html / Css</span> </p>
-          <a href="http://www.photo-ronin.xyz/" class="btn btn-ghost mt-5">Check it out</a>
+          <a href="https://photo-ronin.herokuapp.com/" class="btn btn-ghost mt-5">Check it out</a>
         </div>
-        <a id="img-big" href="http://www.photo-ronin.xyz/"><img class="" src="images/Photo-ronin-mockup.png" alt="photo ronin"></a>
+        <a id="img-big" href="https://photo-ronin.herokuapp.com/"><img class="" src="images/Photo-ronin-mockup.png" alt="photo ronin"></a>
       </div>
 
       <div class="card align-center">
@@ -121,13 +121,12 @@
   //   console.log(event);
   //   navbar.classList.toggle("enabled", "disabled");
   // })
+  const navbar = document.getElementById("navbar");
 
   function dropdown() {
-  const navbar = document.getElementById("navbar");
-  navbar.classList.toggle("enabled");
-  const toggler = document.getElementById("toggler");
-  toggler.classList.toggle("fa fa-bars");
-}
+    navbar.classList.toggle("enabled");
+  }
+
   </script>
 </body>
 </html>
